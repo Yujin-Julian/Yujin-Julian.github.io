@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Busylearning-Home</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--icon pack-->
+	<link rel="stylesheet" href="index.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ 	<script type="text/javascript">
+<!--
+if (screen.width <= 699) {
+document.location = "indexmobile.html";
+}
+//-->
+</script>
+
+</head>
+<body>
+	<script type="text/javascript">
+    $(window).on('load resize',function(){
+        if($(window).width() < 600){
+           window.location = "indexmobile.html"
+        }
+    });
+	</script> <!--redirect the visitor to the mobile version of the site if the screen size is too small-->
+	<!--navigation menu-->
+	<div class="nav">
+
+		<a id="brand" href="#home">Busylearning</a>
+		
+		<div class="navRight">
+			<a href="#about">About</a>
+			<a href="#services">Services</a>
+			<a href="#pricingbox">Pricing</a>
+			<a href="#contact">Contact</a>
+		</div>
+	</div>
+
+	<!--Landing Page Image-->
+	<img src = "banner.jpg" width="1920" height="1080">
+	
+	 
+<div id="about"> <!--changed div class=about to div id = about to use html anchor links-->
+  		<div class="column left" style="background-color:#ffffff; ">
+    		<!--empty left column-->
+  		</div>
+
+  	<div class="column middle" style="background-color:#fcfdff;">
+    	<h2>About Us</h2>
+    	 <div id="textwrapcontainer"><!-- container for the image and the text to allow the text to wrap around the image-->
+			<img src="aboutus.jpg" width="50px" height="50px">
+			<p>Busylearning was started in 2019 to help improve the lives of others. After seeing many having issues with school, work, and/or reaching their personal goals and ambitions, we decided to help. We offer a multitude of services ranging from plain motivational content, to personalized life-coaching. <br>Our services are perfect for 
+			those that struggle with procrastination, willpower, and other motivational issues. Our coaching will help you gain greater control over your life, and time-schedule.<br><br>
+		</div>
+  	</div>
+
+
+  	<div class="column right" style="background-color:#ffffff; ">
+    	<!--empty right column-->
+</div>
+</div>
+<div id="services"> 
+  		<div class="column left" style="background-color:#ffffff; ">
+    		<!--empty left column-->
+  		</div>
+
+  	<div class="column middle" style="background-color:#fcfdff;">
+    	<h2>Services</h2>
+    	<div id="textwrapcontainerright"> <!--container for the image and the text that will wrap around it-->
+			<img src="lifestyle.jpg" width="50px" height="50px"> <!--change this image to someone studying or something. To show off the types of services-->
+			<p>Busylearning currently offers the following services...</p>
+			<ul>
+				<li>Daily Motivation</li>
+				<li>Habit Improvement</li>
+				<li>Study/Productivity Coaching</li>
+				<li>Time-Schedule Creation</li>
+				<li>Personilized Life Coaching</li>
+			</ul>
+			<p>... and more are to come!</p>
+		</div>
+  		</div>
+
+  	<div class="column right" style="background-color:#ffffff; ">
+    	<!--empty right column-->
+  	</div>
+  </div>
+</div>
+
+
+<!--pricing box in development; consider using youtube or something else, it doesn't seem to work well-->
+<div id="pricingbox"> <!--changed div class=about to div id = about to use html anchor links-->
+  		<div class="column left" style="background-color:#ffffff; ">
+    		<!--empty left column-->
+  		</div>
+
+  	<div class="column middle" style="background-color:#fcfdff;">
+  		<h2>Pricing</h2>
+    	<div id="pricing">
+	<div class="col">
+		<div class="table">
+			<h2>Basic</h2>
+			<div class="price">
+			<p>FREE</p>
+			<span>No Cost</span>
+			</div>
+			<ul>
+				<li><i class="fa-check" style="color: green;"></i> Study + Procrastination Tips</li>
+				<li><i class="fa-remove" style="color: red;"></i> Habit Improvement</li>
+				<li><i class="fa-remove" style="color: red;"></i> Personalized Coaching</li>
+			</ul>
+			<a href="subscribe.html?type=basic">Subscribe Now</a>
+		</div>
+	</div>
+	<div class="col">
+		<div class="table">
+			<h2>Standard</h2>
+			<div class="price">
+			<p>$1.99</p>
+			<span>Per Month</span>
+			</div>
+			<ul>
+				<li><i class="fa-check" style="color: green;"></i> Study + Procrastination Tips</li>
+				<li><i class="fa-check" style="color: red;"></i> Habit Improvement</li>
+				<li><i class="fa-remove" style="color: red;"></i> Personalized Coaching</li>
+			</ul>
+			<a href="subscribe.html?type=standard">Subscribe Now</a>
+		</div>
+	</div>
+	<div class="col">
+		<div class="table">
+			<h2>Premium</h2>
+			<div class="price">
+			<p>$4.99</p>
+			<span>Per Month</span>
+			</div>
+			<ul>
+				<li><i class="fa-check" style="color: green;"></i> Study + Procrastination Tips</li>
+				<li><i class="fa-check" style="color: green;"></i> Habit Improvement</li>
+				<li><i class="fa-check" style="color: green;"></i> Personalized Coaching</li>
+			</ul>
+			<a href="subscribe.html?type=premium">Subscribe Now</a>
+		</div>
+	</div>
+  	</div>
+
+
+  	<!--<div class="column right" style="background-color:#ffffff; ">
+    	
+</div>-->
+</div>
+</div>
+
+<div id="contact"> 
+  		<div class="column left" style="background-color:#ffffff; ">
+    		<!--empty left column-->
+  		</div>
+
+  	<div class="column middle" style="background-color:#fcfdff;">
+    	<h2>Contact</h2>
+    	<div id="textwrapcontainerright"> <!--container for the image and the text that will wrap around it-->
+			<img id="movedImgInfo" src="contactbusylearning.jpg" width="50px" height="50px"> 
+			<div id="movedInfo">
+			<p>Contact us:</p>
+			<ul>
+				<li>Email: <span style="unicode-bidi:bidi-override; direction: rtl;">moc.liam<span style="display: none;">foobarnospamplz</span>g@gnin<!--take that spam!-->raelysubgi</span></li>
+				<li>Instagram: <a href="https://www.instagram.com/busylearning/">@busylearning</a></li>
+			</ul>
+			<p>More contact methods will be available soon!</p>
+		</div>
+	</div>
+  		</div>
+
+  	<div class="column right" style="background-color:#ffffff; ">
+    	<!--empty right column-->
+  	</div>
+  </div>
+</div>
+
+<footer>
+	<div id="contactFooter">
+		
+		
+			
+			<a href="https://www.instagram.com/busylearning/"><i style="color: white; font-size: 25px;"class="fa fa-instagram"></i></a>
+			<!--<a href="https://www.instagram.com/busylearning/"><i style="color: white; font-size: 25px;"class="fa fa-facebook"></i></a>-->
+			<p>Copyright © 2019, All rights reserved</p>
+			
+		
+	</div>
+	
+</footer>
+</body>
+</html>

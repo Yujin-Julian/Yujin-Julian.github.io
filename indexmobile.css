@@ -1,0 +1,233 @@
+/*Copyright © Yujin-Julian Litz Park, 2019
+All Rights Reserved
+All acts of copying and redistribution without prior permission are prohibited.*/
+.nav {   /*nav bar styling*/
+    background-color: #333;
+    overflow: hidden;  
+}
+.nav a{
+    float: left;
+  	color: #f2f2f2;
+  	text-align: center;
+ 	padding: 12px 14px;
+ 	text-decoration: none;
+  	font-size: 17px;
+}
+.nav a#brand {   /*brand part of nav bar (busylearning)*/
+  background-color: #4CAF50;
+  color: white;
+  font-family: sans-serif;
+}
+html, body{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #e6ccb3;
+	margin: 0;
+	padding: 0;
+}
+#mainContent{
+	margin-top: 15px;
+	background-color: #fff;
+	border-radius: 25px;
+	margin-left: 5px;
+	margin-right: 5px;
+	box-shadow: 0 0 10px #00000070;
+}
+#mainContent p{
+	text-align: center;
+	font-family: sans-serif;
+}
+#mainContent h2{
+	padding-top: 5px;
+	text-align: center;
+	font-family: sans-serif;
+	color: #4a4d54;
+}
+img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-bottom-left-radius: 10px; /*rounded corners only on bottom of the image*/
+	border-bottom-right-radius: 10px;
+}
+#mainContent img{
+	
+	padding: 10px;
+}
+#servicesM ul{
+	color: #4a4d54;
+}
+.imgM{
+	border-radius: 20px !important;
+}
+
+#servicesM{
+	margin-top: 15px;
+	background-color: #fff;
+	border-radius: 25px;
+	margin-left: 5px;
+	margin-right: 5px;
+	box-shadow: 0 0 10px #00000070;
+	margin-bottom: 10px;
+}
+#servicesM h2{
+	padding-top: 5px;
+	text-align: center;
+	font-family: sans-serif;
+}
+#servicesM p{
+	text-align: center;
+	font-family: sans-serif;
+	padding: 5px;
+}
+#servicesM img{
+	padding: 10px;
+}
+
+.col{
+	flex: 25%;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-top: 3px;
+
+	box-sizing: border-box;
+}
+.pricingbox{
+	background: #ffffff; 
+	padding: 40px 20px;
+	font-family: helvetica, serif;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 10px #00000070; 
+}
+
+.pricingbox h2{
+	text-transform: uppercase; 
+	font-size: 25px;
+	text-align: center;
+	padding: 0; 
+	margin-left: 0;
+	margin-top: 6px;
+}
+.pricingbox ul{
+	margin: 0;
+	padding: 0;
+}
+.pricingbox ul li{
+	padding: 10px 0;
+	list-style: none; 
+}
+.price span{
+  display: block;
+  font-size: 14px;
+}
+.pricingbox a{
+  text-decoration: none; 
+  border: 2px solid grey;
+  display: block;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 40px;
+  text-transform: uppercase;
+  transition: 0.5s linear;
+}
+.pricingbox a:hover{
+  background: grey; 
+  color: #ffffff;
+}
+.pricingbox p{
+  font-size: 30px; 
+  padding: 2px;
+  margin: 2px;
+}
+.pricingbox{
+	text-align: center;
+	border-radius: 20px;
+	margin: 15px;
+	margin-top: 5px!important;
+	margin-bottom: 5px!important;
+}
+.pricing a{
+	text-decoration-style: none;
+	color: black;
+}
+footer{
+  background-color: #333;
+  clear: both;
+  position: relative;
+  height: 130px;
+  margin-top: 50px;
+  text-align: center;
+}
+#contactFooter{
+  color: #fff;
+  display: inline-block;
+  margin-top: 50px;
+}
+#contactFooter a{
+  padding: 7px;
+}
+#contactFooter p{
+  padding-top: 10px;
+  font-size: 10px;
+}
+.imgM{
+	border-radius: 20px !important;
+}
+
+#contactM{
+	margin-top: 15px;
+	background-color: #fff;
+	border-radius: 25px;
+	margin-left: 5px;
+	margin-right: 5px;
+	box-shadow: 0 0 10px #00000070;
+	margin-bottom: 10px;
+}
+#contactM h2{
+	padding-top: 5px;
+	text-align: center;
+	font-family: sans-serif;
+}
+#contactM p{
+	text-align: center;
+	font-family: sans-serif;
+	padding: 5px;
+}
+#contactM img{
+	padding: 10px;
+}
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+i{
+	font-family: fontawesome !important; /*override previous font-family declaration. (If this is removed, fontawesome icons don't work)*/
+}
+p{
+	color: #4a4d54!important;
+}
+.pricingbox h2{
+	color: #4a4d54;
+}
+.pricingbox p{
+	color: #1c1e21!important;
+}
+#servicesM h2{
+	color: #4a4d54;
+}
+#contactM{
+	color: #4a4d54;
+}
+footer p{
+	color: #fff!important;
+}
+#contactM ul li{
+	margin: 10px;
+}
+#contactM ul li a{
+	text-decoration: none;
+}
+p{
+	line-height: 1.2!important;
+}

@@ -1,0 +1,282 @@
+
+/*Copyright © 2019, Yujin-Julian Litz Park
+All Rights Reserved
+All acts of copying and redistribution without prior permission are prohibited.*/
+
+body{
+  margin: 0;
+  padding: 0; /*style for the body part*/
+  background-color: #ffffff; /*background colour*/
+}
+html, body{  /*more style*/
+  height: 100%;
+}
+html{
+  scroll-behavior: smooth; /*smooth scrolling to anchor links*/
+}
+.nav {   /*nav bar styling*/
+    background-color: #333;
+    overflow: hidden;
+    
+}
+.nav a { /*navbar link styles*/
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+.nav a:hover {   /*style when link hovering*/
+  background-color: #f7f7f7;
+  color: black;
+}
+.nav a#brand {   /*brand part of nav bar (busylearning)*/
+  background-color: #4CAF50;
+  color: white;
+}
+.navRight {   /*style for elements of the nav bar that are supposed to float to the right side*/
+  float: right;
+}
+img{         /*landing page image style (and other images too)*/
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+  display: block;
+}
+#about{
+  margin-top: 7px;
+  margin-left: 100px;
+}
+
+* { /*box sizing style for the whole page*/
+  box-sizing: border-box;
+}
+#about{
+  margin: 0;
+  display: block; /*remove white space between image and column*/
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 20px;
+}
+
+.left, .right { /*left and right column styles*/
+  width: 20%;
+  height: 300px; /*how long the side columns are*/
+}
+.middle { /*middle column*/
+  width: 60%;
+  height: 100%;
+ 
+}
+.middle p{
+  font-family: sans-serif;
+}
+.middle img{ /*logo image to be displayed in the about us section */
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.middle h2{          /*h2 of the middle column*/
+  text-align: center;
+  margin-top: 7px;
+  margin-left: 50px;
+  font-size: 40px;
+  color: #4a4d54;
+  font-family: sans-serif;
+}
+#about:after { /*get rid of the floats after the column things */
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 0;
+}
+#services{
+  margin: 0;
+  display: block;
+}
+#textwrapcontainer img{
+  float: left; /*float the image to the left and give it a margin of 10px*/
+  margin: 10px;
+  margin-right: 20px;
+}
+#textwrapcontainer p{
+  padding:15px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+#textwrapcontainerright img{
+  clear: left; /*clear the float: left; property of the previous div*/
+  float: right; /*float the image to the right*/
+  margin: 10px;
+}
+#textwrapcontainerright p{
+  margin-right: 5px; /*margin to the image*/
+  margin-left: 20px;
+  padding: 15px; /*padding (add space between section heading and the content)*/
+  font-size: 20px;
+}
+#textwrapcontainerright ul{
+  margin-left: 30px;
+}
+#textwrapcontainerright ul li{
+  font-size: 20px;
+  margin: 10px;
+}
+#pricing{
+	max-width: 1200px;
+	display: flex;
+	justify-content: center; 
+	text-align: center;
+	flex-wrap: wrap;
+}
+.col{
+	flex: 25%;
+	padding: 10px;
+	max-width: 320px;
+	box-sizing: border-box;
+}
+.table{
+	background: #ffffff; /*background colour white*/
+	padding: 40px 20px;
+	font-family: helvetica, serif;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 10px #00000070; /*give it a box shadow to make it pop*/
+}
+#pricingbox{
+	width: 100%;
+	background-color: #fff;
+}
+#pricingbox .left, .right{
+	width: 20%;
+	background-color: #fff;
+}
+#pricingbox .middle{
+	width: 60%;
+	background-color: #fff;
+  
+
+}
+.table h2{
+	text-transform: uppercase; /*make text uppercase*/
+	font-size: 25px;
+	text-align: center;
+	padding: 0; /*remove padding and margin from the actual header to avoid the slight shift from the center*/
+	margin-left: 0;
+}
+.table ul{
+	margin: 0;
+	padding: 0;
+}
+.table ul li{
+	padding: 10px 0;
+	list-style: none; /*remove dots*/
+}
+.price span{
+  display: block;
+  font-size: 14px;
+}
+.table a{
+  text-decoration: none; /*styling for the subscribe now button*/
+  border: 2px solid grey;
+  display: block;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 40px;
+  text-transform: uppercase;
+  transition: 0.5s linear;
+  color: black;
+}
+.table a:hover{
+  background: grey; /*make subscription button change colour when someone hovers over it*/
+  color: #ffffff;
+}
+.table p{
+  font-size: 30px; /*change the size of the pricing label*/
+  padding: 2px;
+  margin: 2px;
+}
+#pricingbox h2{
+  text-align: center;
+}
+#pricingbox{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden; /*make sure that the floated elements are counted as part of the #pricingbox div. (fixes issue with div heigh=0 and width not 100%)*/
+}
+@media only screen and(max-width: 1200){
+  #pricingbox .left, .right{
+    width: 5%;
+  }
+  #pricingbox .middle{
+    width: 90%;
+  }
+}
+
+footer{
+  background-color: #333;
+  clear: both;
+  position: relative;
+  height: 130px;
+  margin-top: 150px;
+  text-align: center;
+}
+#contactFooter{
+  color: #fff;
+  display: inline-block;
+  margin-top: 50px;
+}
+#contactFooter a{
+  padding: 7px;
+}
+#contactFooter p{
+  padding-top: 10px;
+  font-size: 10px;
+}
+i{
+  font-family: fontawesome !important;
+}
+.middle p{
+  line-height: 1.5;
+  color: #4a4d54;
+}
+#pricingbox p{
+  color: black;
+}
+ul{
+  color: #4a4d54;
+}
+#pricingbox ul{
+  color: #4a4d54;
+}
+#pricingbox h2{
+  color: #4a4d54;
+}
+#pricingbox ul li{
+  color: #1c1e21; 
+}
+#movedInfo{
+  padding-left: 75px;
+}
+#movedInfo a{
+  text-decoration: none;
+}
+#movedImgInfo{
+  margin-right: 25px;
+}
+.topM h2{
+  color: #4a4d54!important;
+}
+#servicesM h2{
+  color: #4a4d54!important;
+}
+
+#contactM h2{
+  color: #4a4d54!important;
+}

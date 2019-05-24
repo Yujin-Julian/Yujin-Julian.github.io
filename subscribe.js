@@ -5,9 +5,17 @@ function getUrlParameter(name) { /*Get the parameters in the url bar*/
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
-var param = getUrlParameter("type");
+
+
+
+
+
+
+
+$(document).ready(function(){
+    var param = getUrlParameter("type");
 if (param != null && param.toUpperCase()==="BASIC"){
-	$(document).ready(function(){ 
+    $(document).ready(function(){ 
     $("#basic").show()
 
 });
@@ -20,22 +28,17 @@ $(document).ready(function(){ /*wait until webpage content is ready and after it
 });
 }
 else if(param != null && param.toUpperCase()==="PREMIUM"){
-	$(document).ready(function(){ 
+    $(document).ready(function(){ 
     $("#premium").show()
 
 });
 }
 
 else{
-	$(document).ready(function(){ 
+    $(document).ready(function(){ 
     $("#regular").show()
 
 });
 
 }
-
-
-
-
-
-
+});

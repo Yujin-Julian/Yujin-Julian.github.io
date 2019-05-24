@@ -109,3 +109,11 @@ i{
 .navRight{
 	font-family: sans-serif;
 }
+#regularLi li{
+	list-style-type: none;
+	font-family: sans-serif;
+	font-size: 25px;
+}
+#regularLi li a{
+	text-decoration: none;
+}

@@ -1,4 +1,4 @@
-/*Copyright © Yujin-Julian Litz Park, 2019
+/*Copyright © 2019
 All Rights Reserved
 All acts of copying and redistribution without prior permission are prohibited.*/
 .nav {   /*nav bar styling*/
@@ -236,4 +236,8 @@ p{
 #bannerImgMobile{
 	overflow: hidden;
 	width: 100%;
+}
+.imgM{
+	width: 90%; /*make sure image doesn't overflow from the div*/
+	height: auto;
 }
